@@ -7,8 +7,14 @@
 
         <?php require_once(__DIR__ . "/db.php"); ?>
     </head>
-    <body>
-        
 
+    <body>
+        <?php
+            var_dump ($dog);
+            echo "<br><br><br>";
+            var_dump ($cat);
+            echo "<br><br><br>";
+            var_dump($prod_croccantini);
+        ?>
     </body>
 </html>
