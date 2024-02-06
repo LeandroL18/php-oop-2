@@ -15,6 +15,8 @@
             var_dump ($cat);
             echo "<br><br><br>";
             var_dump($prod_croccantini);
+            echo "<br><br><br>";
+            var_dump($prod_cuccia);
         ?>
     </body>
 </html>

@@ -8,7 +8,7 @@
         // costruttore
         public function __construct($id, $title, $image, $price, Category $category, $expireDate) {
 
-            $this -> setId($id);  
+            $this -> setId($id);
             $this -> setTitle($title);
             $this -> setImage($image);
             $this -> setPrice($price); 
@@ -29,3 +29,4 @@
             return self :: $typology;
         }
     }
+?>
