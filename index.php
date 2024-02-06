@@ -9,14 +9,39 @@
     </head>
 
     <body>
+    <ul style= "list-style-type: none;">
         <?php
-            var_dump ($dog);
-            echo "<br><br><br>";
-            var_dump ($cat);
-            echo "<br><br><br>";
-            var_dump($prod_croccantini);
-            echo "<br><br><br>";
-            var_dump($prod_cuccia);
+            foreach ($prods as $prod) {
+                
+                ?>
+
+                    <li>
+                        <h3>
+                            <?php
+                                echo $prod -> getTypology();
+                            ?>
+                        </h3>
+                        <?php
+                            echo $prod -> getTitle();
+                        ?>: 
+                        <?php
+                            echo $prod -> getPrice();
+                        ?>
+                        Euro
+                        <br><br>
+                        <img src="<?php echo $prod -> getImage() ?>"  width="100" />
+                        <br>
+                        Category:
+                        <img src="<?php echo $prod -> getCategory() -> getIcon() ?>"  width="30" style="vertical-align: -5px;" />
+                        <?php
+                            echo $prod -> getCategory() -> getName();
+                        ?>
+                        <br><br>
+                    </li>
+
+                <?php
+            }
         ?>
+    </ul>
     </body>
 </html>

@@ -7,9 +7,9 @@
     require_once(__DIR__ . "/models/animalHouse.php");
 
     // CATEGORIES
-    $dog = new Category(1, "Cane", "https://cdn.cosedicasa.com/wp-content/uploads/2017/12/educare-un-cucciolo.jpg");
+    $dog = new Category(1, "Dog", "https://cdn4.iconfinder.com/data/icons/eldorado-medicine/40/dog-512.png");
 
-    $cat = new Category(2, "Cat", "https://assets.elanco.com/8e0bf1c2-1ae4-001f-9257-f2be3c683fb1/ddc807aa-b64f-4c1b-9553-8c07aa1ae35d/gatto-e-topolino-di-pezza.jpg?w=3840&q=75&auto=format");
+    $cat = new Category(2, "Cat", "https://cdn3.iconfinder.com/data/icons/animal-and-tool/283/animal_and_tool-02-512.png");
 
     // PRODUCTS
     $prod_croccantini = new Food(
