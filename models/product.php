@@ -8,6 +8,8 @@
         private $price;  
         private $category;
 
+        use Discount;
+
         // costruttore
         public function __construct($id, $title, $image, $price,Category $category) {
 
@@ -16,6 +18,7 @@
             $this -> setImage($image);
             $this -> setPrice($price);
             $this -> setCategory($category);
+            $this -> setDiscount($Discount);
         }
 
         // get e set id
@@ -56,6 +59,10 @@
         }
         public function setCategory(Category $category) {
             $this -> category = $category;
+        }
+
+        public function getDiscountedPrice(){
+            return $this -> getPrice() - $this -> getPrice() / 100 * $this -> getDiscount();
         }
     }
 ?>

@@ -24,10 +24,18 @@
                         <?php
                             echo $prod -> getTitle();
                         ?>: 
-                        <?php
-                            echo $prod -> getPrice();
-                        ?>
-                        Euro
+                        <span style="text-decoration:line-through;">
+                            <?php
+                                echo $prod -> getPrice();
+                            ?>
+                            Euro
+                        </span>
+                        <span style="color:red">
+                            <?php
+                                echo $prod -> getDiscountedPrice();
+                            ?>
+                            Euro
+                        </span>
                         <br><br>
                         <img src="<?php echo $prod -> getImage() ?>"  width="100" />
                         <br>
