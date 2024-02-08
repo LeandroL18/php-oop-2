@@ -34,6 +34,9 @@
             return $this -> title;
         }
         public function setTitle($title) {
+            if (!is_string($title) || strlen($title) < 3) 
+                throw new Exception("'$title' is not valid title");
+            
             $this -> title = $title;
         }
 

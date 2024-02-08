@@ -5,7 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>php-oop-2</title>
 
-        <?php require_once(__DIR__ . "/db.php"); ?>
+        <?php require_once(__DIR__ . "/db.php"); 
+        
+        // gestione errore titolo alla creazione del prodotto
+        // try {
+
+        //     $test_exception = new Product(3, "Te", "Image" , 50, $cat, "10/05/2024");
+        // } catch (Exception $e) {
+
+        //     echo "Impossibile creare prodotto di test: " . $e -> getMessage();
+        // }
+
+        // die();
+
+        ?>
     </head>
 
     <body>
